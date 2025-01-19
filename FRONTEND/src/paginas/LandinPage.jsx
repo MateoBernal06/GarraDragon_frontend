@@ -13,21 +13,22 @@ import logoWeb4 from '../assets/web4.png'
 import logoWeb5 from '../assets/web5.png'
 import logoWeb6 from '../assets/web6.png'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 
 export const LandinPage = () => {
     const [darkMode, setdarkMode] = useState(false)
     return (
         <div className={darkMode ? "dark" :""}>
-            <main>
+
+            <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
                 <section>
-                    <nav>
-                        <h1 className='titulo-app'>Sistema de Aportaciones ESFOT</h1>
-                        <div className='login-register-mod'>
-                            <button><img onClick={()=>setdarkMode(!darkMode)} className='cursor-pointer' src={logoDarkMode} alt="logo" width={40} height={40}/></button>
-                            <button><Link to="/login" className='button-login-register' href="#">Login</Link></button>
-                            <button><Link to="/register" className='button-login-register' href="#">Registro</Link></button>
-                        </div>
+                    <nav className='p-10 mb-12 flex justify-between'>
+                        <h1 className='text-2xl font-bold dark:text-white'>App-Demo</h1>
+                        <ul className='flex items-center'>
+                            <li><img onClick={()=>setdarkMode(!darkMode)} className='cursor-pointer' src={logoDarkMode} alt="logo" width={40} height={40}/></li>
+                            <li><Link to="/login" className='bg-gray-600 text-slate-400 px-6 py-2 rounded-full ml-8 hover:bg-gray-900 hover:text-white' href="#">Login</Link></li>
+                        </ul>
                     </nav>
 
                     <div className='text-center'>
