@@ -1,0 +1,38 @@
+
+.titulo-app{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.button-login-register{
+    height: 40px;
+    width: 80px;
+}
+
+.linkRuta{
+    text-decoration: none;
+}
+
+.login-register-mod{
+    display: flex;
+    background-color: rgb(172, 127, 255);
+    width: 200px;
+    gap: 25px;
+    
+}
+
+.botones-logo{
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+}

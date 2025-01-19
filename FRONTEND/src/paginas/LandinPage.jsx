@@ -12,28 +12,27 @@ import logoWeb3 from '../assets/web3.png'
 import logoWeb4 from '../assets/web4.png'
 import logoWeb5 from '../assets/web5.png'
 import logoWeb6 from '../assets/web6.png'
+import logoEsfot from '../assets/logos/logo_esfot_buho.png'
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
 
 
-export const LandinPage = () => {
-    const [darkMode, setdarkMode] = useState(false)
-    return (
-        <div className={darkMode ? "dark" :""}>
 
-            <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
+export const LandinPage = () => {
+    return (
+        <div>
+            <main>
                 <section>
-                    <nav className='p-10 mb-12 flex justify-between'>
-                        <h1 className='text-2xl font-bold dark:text-white'>App-Demo</h1>
-                        <ul className='flex items-center'>
-                            <li><img onClick={()=>setdarkMode(!darkMode)} className='cursor-pointer' src={logoDarkMode} alt="logo" width={40} height={40}/></li>
-                            <li><Link to="/login" className='bg-gray-600 text-slate-400 px-6 py-2 rounded-full ml-8 hover:bg-gray-900 hover:text-white' href="#">Login</Link></li>
-                        </ul>
+                    <nav className='botones-logo'>
+                        <img className='logo' src={logoEsfot} alt="logo-esfot"/>
+                            <div className='login-register-mod'>
+                                <button className='button-login-register'><Link className='linkRuta' to="/login" href="#">Login</Link></button>
+                                <button className='button-login-register'><Link className='linkRuta' to="/register" href="#">Registro</Link></button>
+                            </div> 
                     </nav>
 
                     <div className='text-center'>
-                        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Proyect Demo</h2>
-                        <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Scalable and Responsive</h3>
+                        <h1 className='titulo-app'>Sistema de Aportaciones ESFOT</h1>
                         <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero dolore pariatur asperiores voluptatibus sunt optio iste atque animi id odio aliquid sapiente voluptatem, accusantium, ea sed quibusdam a. Itaque.</p>
                     </div>
 
