@@ -1,21 +1,16 @@
-import logoDarkMode from '../assets/dark.png'
-import logoFacebook from '../assets/facebook.png'
-import logoGithub from '../assets/github.png'
-import logoLinkedind from '../assets/linkedin.png'
-import logoRocket from '../assets/rocket.webp'
-import logoCode from '../assets/code.png'
-import logoConsulting from '../assets/consulting.png'
-import logoDesign from '../assets/design.png'
-import logoWeb1 from '../assets/web1.png'
-import logoWeb2 from '../assets/web2.png'
-import logoWeb3 from '../assets/web3.png'
-import logoWeb4 from '../assets/web4.png'
-import logoWeb5 from '../assets/web5.png'
-import logoWeb6 from '../assets/web6.png'
+
+import logoFacebook from '../assets/logo_redes/facebook.bmp'
+import logoInstagram from '../assets/logo_redes/instagram.bmp'
+import logoTiktok from '../assets/logo_redes/tiktok.bmp'
 import logoEsfot from '../assets/logos/logo_esfot_buho.png'
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
-
+import imagenDesfile from '../assets/imagenes_landinPage/desfile.jpg'
+import imagenDesfile_dragon from '../assets/imagenes_landinPage/desfile_2.jpg'
+import imagenDesfileDirectiva from '../assets/imagenes_landinPage/desfile_3.jpg'
+import mingaEsfot from '../assets/imagenes_landinPage/minga.jpg'
+import minga from '../assets/imagenes_landinPage/minga_2.jpg'
+import logoASO from '../assets/logos/logo_aso.png'
 
 
 export const LandinPage = () => {
@@ -26,117 +21,93 @@ export const LandinPage = () => {
                     <nav className='botones-logo'>
                         <img className='logo' src={logoEsfot} alt="logo-esfot"/>
                             <div className='login-register-mod'>
-                                <button className='button-login-register'><Link className='linkRuta' to="/login" href="#">Login</Link></button>
-                                <button className='button-login-register'><Link className='linkRuta' to="/register" href="#">Registro</Link></button>
+                                <Link className='linkRuta' to="/login" href="#"><button className='button-login-register'>Login</button></Link>
+                                <Link className='linkRuta' to="/register" href="#"><button className='button-login-register'>Regisro</button></Link>
                             </div> 
                     </nav>
-
-                    <div className='text-center'>
-                        <h1 className='titulo-app'>Sistema de Aportaciones ESFOT</h1>
-                        <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero dolore pariatur asperiores voluptatibus sunt optio iste atque animi id odio aliquid sapiente voluptatem, accusantium, ea sed quibusdam a. Itaque.</p>
-                    </div>
-
-                    <div className='text-5xl flex justify-center gap-16 py-3'>
-                        <img src={logoFacebook} alt="logo-redes" width={50} height={50}  className={'dark:border-2 border-teal-300 rounded-full'}/>
-
-                        <img src={logoGithub} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
-
-                        <img src={logoLinkedind} alt="logo-redes" width={50} height={50} className={'dark:border-2 border-teal-300 rounded-full'}/>
-                    </div>
-
-                    <div className='relative mx-auto  bg-gradient-to-b from-indigo-400 rounded-full w-80 h-80 mt-12 overflow-hidden md:w-96 md:h-96 dark:border-4 border-teal-300'>
-                        <img src={logoRocket} alt="logo-rocket" />
-                    </div>
                 </section>
-
                 <section>
-                    <div>
-                        <h3 className='text-3xl py-1 dark:text-white'>Services offered</h3>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
-                    </div>
-
-                    <div className='md:flex md:flex-wrap lg:flex lg:justify-center gap-10'>
-                        <div className='text-center shadow-2xl p-10 rounded-xl my-10 md:w-72 lg:w-96 dark:bg-slate-100'>
-                            <img className='mx-auto' src={logoCode} alt="" />
-                            <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-                            <p className='py-4 text-teal-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae aliquid dolores officiis neque. Voluptatem quod nemo, totam iste atque id aspernatur porro laborum, non quo, pariatur nobis natus consectetur?</p>
-                            <p className='text-gray-800 py-1'>Tools used</p>
-                            <p className='text-gray-800 py-1'>Photoshop</p>
-                            <p className='text-gray-800 py-1'>Illustrator</p>
-                            <p className='text-gray-800 py-1'>Figma</p>
-                        </div>
-                        <div className='text-center shadow-2xl p-10 rounded-xl my-10 md:w-72 lg:w-96 dark:bg-slate-300'>
-                            <img className='mx-auto' src={logoConsulting} alt="" />
-                            <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-                            <p className='py-4 text-teal-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae aliquid dolores officiis neque. Voluptatem quod nemo, totam iste atque id aspernatur porro laborum, non quo, pariatur nobis natus consectetur?</p>
-                            <p className='text-gray-800 py-1'>Tools used</p>
-                            <p className='text-gray-800 py-1'>Photoshop</p>
-                            <p className='text-gray-800 py-1'>Illustrator</p>
-                            <p className='text-gray-800 py-1'>Figma</p>
-                        </div>
-                        <div className='text-center shadow-2xl p-10 rounded-xl my-10 md:w-72 lg:w-96 dark:bg-slate-100'>
-                            <img className='mx-auto' src={logoDesign} alt="" />
-                            <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-                            <p className='py-4 text-teal-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae aliquid dolores officiis neque. Voluptatem quod nemo, totam iste atque id aspernatur porro laborum, non quo, pariatur nobis natus consectetur?</p>
-                            <p className='text-gray-800 py-1'>Tools used</p>
-                            <p className='text-gray-800 py-1'>Photoshop</p>
-                            <p className='text-gray-800 py-1'>Illustrator</p>
-                            <p className='text-gray-800 py-1'>Figma</p>
-                        </div>
+                    <div className='lugar-desfile'>
+                        <img className='imagen-desfile' src={imagenDesfile_dragon} alt="defile-esfot" />
+                        <img className='imagen-desfile' src={mingaEsfot} alt="minga-esfot" />
+                        <img className='imagen-desfile' src={imagenDesfile} alt="defile-esfot" />
                     </div>
                 </section>
-
                 <section>
-                    <div>
-                        <h3 className='text-3xl py-1 dark:text-white'>Proyects</h3>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
-                        <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, delectus iure <span className='text-teal-500'>quibusdam</span> quas quaerat itaque, est minima ducimus recusandae illo ipsam numquam nam earum libero <span className='text-teal-500'>deleniti</span> voluptatem! Autem, veniam ut.</p>
+                    <div className='descripcion-logo'>
+                        <div className='lugar-descripcion'>
+                            <h1 className='titulo-app'>Sistema de Aportaciones ASO-ESFOT</h1>
+                            <p className='descripcion'>
+                                Bienvenido al sistema de aportaciones de nuestra Facultad, un espacio diseñado para fomentar el espíritu de colaboración 
+                                y apoyo entre estudiantes. Aquí, cada contribución cuenta y puede marcar una diferencia significativa en la vida de tus 
+                                compañeros y en el desarrollo de proyectos e iniciativas que beneficien a todos.
+                            </p>
+                        </div>
+                        <div>
+                            <img className='imagenes-aso' src={minga} alt="logo-ASO" />
+                        </div>
                     </div>
-
-
-                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        <div className="basis-1/3 flex-1 ">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb1}
-                            />
+                    <div className='descripcion-logo'>
+                        <div>
+                            <img className='imagenes-aso'src={imagenDesfileDirectiva} alt="" />
                         </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb2}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-fill"
-                                src={logoWeb4}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb6}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img
-                                className="rounded-lg object-cover"
-                                src={logoWeb5}
-                            />
-                        </div>
-                        <div className="basis-1/3 flex-1 lg:bg-orange-100">
-                            <img
-                                className="rounded-lg object-cover "
-                                src={logoWeb3}
-                            />
+                        <div className='descripcion'>
+                            <h2 className='pregunta'>¿Por qué contribuir?</h2>
+                            <ul>
+                                <li>
+                                    <b>Fortalece el aprendizaje:</b>Tus aportaciones ayudan a mejorar recursos educativos, instalaciones 
+                                y herramientas que enriquecen nuestra experiencia académica.
+                                </li>
+                                <br/>
+                                <li>
+                                    <b>Apoya a tus compañeros:</b>Facilita becas y ayudas económicas que permiten a más estudiantes continuar 
+                                    su educación sin barreras financieras.
+                                </li>
+                                <br />
+                                <li>
+                                    <b>Fomenta la innovación:</b>Impulsa proyectos de investigación y desarrollo que posicionan a nuestra facultad 
+                                    a la vanguardia del conocimiento.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
-
             </main>
-
+            <footer>
+                <div className='pie-pagina'>
+                    <div>
+                        <ul className='pie'>
+                            <li><img className='logo-pie' src={logoASO} alt="" /></li>
+                            <li>asoesfot@gmail.com</li>
+                            <li>(02)-2953055</li>
+                            <li>Direccion: Guatemala y Condorcunga</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className='pie'>
+                            <li>Redes</li>
+                            <li>
+                                <div className='redes'>
+                                    <p><img className='logo-redes' src={logoFacebook} alt="log-facebook" /></p>
+                                    <p><img className='logo-redes' src={logoInstagram} alt="log-instagram" /></p>
+                                    <p><img className='logo-redes' src={logoTiktok} alt="log-tiktok" /></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>© 2025 Mateo Bernal. Todos los derechos reservados.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className='pie'>
+                            <li><a href="">Aviso Legal</a></li>
+                            <li><a href="">Política de Privacidad</a></li>
+                            <li><a href="">Términos y Condiciones</a></li>
+                            <li><a href="">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
