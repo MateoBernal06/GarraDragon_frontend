@@ -1,4 +1,4 @@
-import './styles/App.css'
+import './styles/Principal.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Auth from './layout/Auth'
 import Login from './paginas/Login'
@@ -9,13 +9,12 @@ import { NotFound } from './paginas/NotFound'
 import { Confirmar } from './paginas/Confirmar'
 
 
-
 function App() {
   return (
     <>
     <BrowserRouter>
       <Routes>
-        ////<Route index element={<LandinPage/>}/>
+        <Route index element={<LandinPage/>}/>
         <Route path='/' element={<Auth/>}>
           <Route path='login' element={<Login/>}/>
           <Route path='register' element={<Register/>}/>
