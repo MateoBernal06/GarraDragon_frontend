@@ -2,7 +2,6 @@
 import logoFacebook from '../assets/logo_redes/facebook.bmp'
 import logoInstagram from '../assets/logo_redes/instagram.bmp'
 import logoTiktok from '../assets/logo_redes/tiktok.bmp'
-import logoEsfot from '../assets/logos/logo_esfot_buho.png'
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import imagenDesfile from '../assets/imagenes_landinPage/desfile.jpg'
@@ -11,25 +10,30 @@ import imagenDesfileDirectiva from '../assets/imagenes_landinPage/desfile_3.jpg'
 import mingaEsfot from '../assets/imagenes_landinPage/minga.jpg'
 import minga from '../assets/imagenes_landinPage/minga_2.jpg'
 import logoASO from '../assets/logos/logo_aso.png'
-import { Button } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
+
 
 
 export const LandinPage = () => {
     return (
         <div>
-            <main>
-                <section>
-                    <nav className='botones-logo'>
-                        <img className='logo' src={logoEsfot} alt="logo-esfot"/>
-                            <div className='login-register-mod'>
-                                <Link className='linkRuta' to="/login" href="#"><button className='button-login-register'>Login</button></Link>
-                                <Link className='linkRuta' to="/register" href="#"><button className='button-login-register'>Regisro</button></Link>
-                                <Button as="a" variant="primary">
-                                    Button as link
-                                </Button>
-                            </div> 
-                    </nav>
-                </section>
+            <body>
+                <nav className='botones-logo-frase'>
+                    <div className='lugar-logo'>
+                        <img className='logo' src={logoASO} alt="logo-esfot"/>
+                    </div>
+                    <div className='lugar-frase'>
+                        <p className='frase'>
+                            "En la ESFOT, el futuro se construye con ingenio, pasión y tecnología. ¡Sueña en grande, 
+                            innova sin límites y transforma el mundo a tu alcance!" 🚀
+                        </p>
+                    </div>
+                    <div className='login-register-mod'>
+                        <Link className='linkRuta' to="/login" href="#"><Button variant="outline-light">Login</Button></Link>
+                        <Link className='linkRuta' to="/register" href="#"><Button variant="outline-light">Registro</Button></Link>
+                    </div> 
+                </nav>
+
                 <section>
                     <div className='lugar-desfile'>
                         <img className='imagen-desfile' src={imagenDesfile_dragon} alt="defile-esfot" />
@@ -37,8 +41,9 @@ export const LandinPage = () => {
                         <img className='imagen-desfile' src={imagenDesfile} alt="defile-esfot" />
                     </div>
                 </section>
+
                 <section>
-                    <div className='descripcion-logo'>
+                    <div className='descripcion-imagen'>
                         <div className='lugar-descripcion'>
                             <h1 className='titulo-app'>Sistema de Aportaciones ASO-ESFOT</h1>
                             <p className='descripcion'>
@@ -47,36 +52,36 @@ export const LandinPage = () => {
                                 compañeros y en el desarrollo de proyectos e iniciativas que beneficien a todos.
                             </p>
                         </div>
-                        <div>
+                        <div className='lugar-imagen-descripcion'>
                             <img className='imagenes-aso' src={minga} alt="logo-ASO" />
                         </div>
                     </div>
-                    <div className='descripcion-logo'>
-                        <div>
+                    <div className='descripcion-imagen'>
+                        <div className='lugar-imagen-descripcion'>
                             <img className='imagenes-aso'src={imagenDesfileDirectiva} alt="" />
                         </div>
-                        <div className='descripcion'>
+                        <div className='lugar-descripcion'>
                             <h2 className='pregunta'>¿Por qué contribuir?</h2>
                             <ul>
                                 <li>
-                                    <b>Fortalece el aprendizaje:</b>Tus aportaciones ayudan a mejorar recursos educativos, instalaciones 
-                                y herramientas que enriquecen nuestra experiencia académica.
+                                    <p className='respuestas-pregunta'><b>Fortalece el aprendizaje:</b>Tus aportaciones ayudan a mejorar recursos educativos, instalaciones 
+                                    y herramientas que enriquecen nuestra experiencia académica.</p>
                                 </li>
                                 <br/>
                                 <li>
-                                    <b>Apoya a tus compañeros:</b>Facilita becas y ayudas económicas que permiten a más estudiantes continuar 
-                                    su educación sin barreras financieras.
+                                    <p className='respuestas-pregunta'><b>Apoya a tus compañeros:</b>Facilita becas y ayudas económicas que permiten a más estudiantes continuar 
+                                    su educación sin barreras financieras.</p>
                                 </li>
                                 <br />
                                 <li>
-                                    <b>Fomenta la innovación:</b>Impulsa proyectos de investigación y desarrollo que posicionan a nuestra facultad 
-                                    a la vanguardia del conocimiento.
+                                    <p className='respuestas-pregunta'><b>Fomenta la innovación:</b>Impulsa proyectos de investigación y desarrollo que posicionan a nuestra facultad 
+                                    a la vanguardia del conocimiento.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
-            </main>
+            </body>
             <footer>
                 <div className='pie-pagina'>
                     <div>
