@@ -11,6 +11,7 @@ import imagenDesfileDirectiva from '../assets/imagenes_landinPage/desfile_3.jpg'
 import mingaEsfot from '../assets/imagenes_landinPage/minga.jpg'
 import minga from '../assets/imagenes_landinPage/minga_2.jpg'
 import logoASO from '../assets/logos/logo_aso.png'
+import { Button } from 'react-bootstrap'
 
 
 export const LandinPage = () => {
@@ -23,6 +24,9 @@ export const LandinPage = () => {
                             <div className='login-register-mod'>
                                 <Link className='linkRuta' to="/login" href="#"><button className='button-login-register'>Login</button></Link>
                                 <Link className='linkRuta' to="/register" href="#"><button className='button-login-register'>Regisro</button></Link>
+                                <Button as="a" variant="primary">
+                                    Button as link
+                                </Button>
                             </div> 
                     </nav>
                 </section>

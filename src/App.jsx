@@ -7,7 +7,7 @@ import { Register } from './paginas/Register'
 import { Forgot } from './paginas/Forgot'
 import { NotFound } from './paginas/NotFound'
 import { Confirmar } from './paginas/Confirmar'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
