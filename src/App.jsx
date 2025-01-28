@@ -22,7 +22,7 @@ function App() {
           <Route path='forgot/:id' element={<Forgot/>}/>
           <Route path='confirmar/:token' element={<Confirmar/>}/>
         </Route>
-        <Route path='*' element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
     </>
