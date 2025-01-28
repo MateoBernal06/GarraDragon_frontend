@@ -118,9 +118,83 @@
 }
 
 .logo-redes{
-    
     width: 50px;
     height: 50px;
 }
 
+@media (max-width: 768px) {
+    .botones-logo-frase{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .lugar-logo{
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+
+    .login-register-mod{
+        grid-row: 1;
+        grid-column: 2/4;
+        gap: 10px;
+    }
+
+    .lugar-frase{
+        grid-row: 2;
+        grid-column: 1/4;
+        padding: 10px;
+    }
+
+    .imagen-desfile{
+        margin-top: 5px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .descripcion-imagen{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .descripcion, .respuestas-pregunta{
+        font-size: 20px;
+    }
+
+    .imagenes-aso{
+        width: 350px;
+        height: 250px;
+    }
+
+    .titulo-app, .pregunta{
+        font-size: 25px;
+    }
+
+    .lugar-desfile{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .pie-pagina{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .imagen-desfile{
+        height: 350px;
+        width: 300px;
+    }
+
+    .botones-logo-frase{
+        height: 100px;
+    }
+
+    .imagenes-aso{
+        width: 450px;
+        height: 350px;
+    }
+}

@@ -1,7 +1,7 @@
 
-import logoFacebook from '../assets/logo_redes/facebook.bmp'
-import logoInstagram from '../assets/logo_redes/instagram.bmp'
-import logoTiktok from '../assets/logo_redes/tiktok.bmp'
+import logoFacebook from '../assets/logo_redes/facebook.jpg'
+import logoInstagram from '../assets/logo_redes/instagram.jpg'
+import logoTiktok from '../assets/logo_redes/tiktok.jpg'
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import imagenDesfile from '../assets/imagenes_landinPage/desfile.jpg'
@@ -9,7 +9,7 @@ import imagenDesfile_dragon from '../assets/imagenes_landinPage/desfile_2.jpg'
 import imagenDesfileDirectiva from '../assets/imagenes_landinPage/desfile_3.jpg'
 import mingaEsfot from '../assets/imagenes_landinPage/minga.jpg'
 import minga from '../assets/imagenes_landinPage/minga_2.jpg'
-import logoASO from '../assets/logos/logo_aso.png'
+import logoASO from '../assets/logos/logo_aso.jpg'
 import Button from 'react-bootstrap/Button'
 
 
@@ -109,10 +109,10 @@ export const LandinPage = () => {
                     </div>
                     <div>
                         <ul className='pie'>
-                            <li><a href="">Aviso Legal</a></li>
-                            <li><a href="">Política de Privacidad</a></li>
-                            <li><a href="">Términos y Condiciones</a></li>
-                            <li><a href="">Política de Cookies</a></li>
+                            <li><p href="">Aviso Legal</p></li>
+                            <li><p href="">Política de Privacidad</p></li>
+                            <li><p href="">Términos y Condiciones</p></li>
+                            <li><p href="">Política de Cookies</p></li>
                         </ul>
                     </div>
                 </div>
