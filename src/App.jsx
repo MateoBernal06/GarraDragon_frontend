@@ -7,6 +7,7 @@ import { Register } from './paginas/Register'
 import { Forgot } from './paginas/Forgot'
 import { NotFound } from './paginas/NotFound'
 import { Confirmar } from './paginas/Confirmar'
+import Restablecer from './paginas/Restablecer_password'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='register' element={<Register/>}/>
           <Route path='forgot/:id' element={<Forgot/>}/>
           <Route path='confirmar/:token' element={<Confirmar/>}/>
+          <Route path='recuperar-password/:token' element={<Restablecer/>} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
