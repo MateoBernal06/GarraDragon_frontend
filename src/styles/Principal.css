@@ -32,13 +32,12 @@
 
 .imagen-desfile{
     height: 450px;
-    width: 500px;
+    width: 450px;
 }
 
 .lugar-desfile{
     display: flex;
     justify-content: center;
-
 }
 
 .descripcion-imagen{
